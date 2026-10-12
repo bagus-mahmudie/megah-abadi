@@ -1,29 +1,29 @@
 # Megah Abadi
 
-Aplikasi toko online Megah Abadi dengan katalog produk, keranjang, checkout, dan pelacakan pesanan.
+Megah Abadi online store application with a product catalog, shopping cart, checkout, and order tracking.
 
-**Status:** Pengembangan lokal; demo publik belum tersedia.
+**Status:** Local development; a public demo is not yet available.
 
-## Fitur
+## Features
 
-- Katalog produk, filter, dan ulasan
-- Keranjang, alamat pelanggan, dan checkout
-- Integrasi pembayaran Midtrans dan pengiriman Biteship
+- Product catalog, filters, and reviews
+- Shopping cart, customer addresses, and checkout
+- Midtrans payment and Biteship shipping integrations
 
-## Teknologi
+## Technology
 
 Laravel 9, Blade, Tailwind CSS, MySQL.
 
-## Menjalankan secara lokal
+## Running Locally
 
-Gunakan PHP ^8.0.2, Composer, MySQL, serta Node.js yang sesuai dengan versi bundler di `package.json`.
+Use PHP ^8.0.2, Composer, MySQL, and a Node.js version compatible with the bundler version in `package.json`.
 
 ```sh
 composer install
 npm ci
 ```
 
-Salin `.env.example` menjadi `.env`, buat database kosong, lalu isi konfigurasi database lokal. Kredensial email, OAuth, pembayaran, dan pengiriman hanya diisi di `.env`.
+Copy `.env.example` to `.env`, create an empty database, and enter your local database configuration. Store email, OAuth, payment, and shipping credentials only in `.env`.
 
 ```sh
 php artisan key:generate
@@ -33,22 +33,22 @@ npm run build
 php artisan serve
 ```
 
-Buka [localhost:8000](http://localhost:8000). Gunakan database pengembangan; data pengguna, unggahan, dan kredensial akun asli tidak disertakan. Seeder tidak menyediakan password login tetap; atur akun pengembangan sendiri.
+Open [localhost:8000](http://localhost:8000). Use a development database; real user data, uploads, and account credentials are not included. Seeders do not provide a fixed login password; configure your own development account.
 
-Integrasi eksternal memerlukan akun dan konfigurasi layanan masing-masing. Gunakan mode sandbox jika tersedia.
+External integrations require accounts and configuration for their respective services. Use sandbox mode where available.
 
-## Struktur
+## Structure
 
-- `app/` — model, controller, dan logika aplikasi.
-- `resources/` — tampilan dan aset frontend.
-- `routes/` — rute aplikasi.
-- `database/` — migration, factory, dan seeder.
-- `tests/` — pengujian yang tersedia pada proyek.
+- `app/` — models, controllers, and application logic.
+- `resources/` — views and frontend assets.
+- `routes/` — application routes.
+- `database/` — migrations, factories, and seeders.
+- `tests/` — tests available in the project.
 
-## Pemeriksaan
+## Checks
 
-Jalankan `php artisan test` pada lingkungan pengembangan yang telah dikonfigurasi. Keberadaan pengujian di repository tidak berarti seluruh integrasi eksternal telah diuji.
+Run `php artisan test` in a configured development environment. The presence of tests in the repository does not mean that all external integrations have been tested.
 
-## Catatan repository
+## Repository Notes
 
-Dependensi terpasang, cache, file `.env`, database, dan unggahan pengguna tidak disertakan. Nama merek dan aset pihak ketiga tetap mengikuti hak pemiliknya. Tidak ada lisensi penggunaan ulang yang diberikan melalui repository ini.
+Installed dependencies, caches, `.env` files, databases, and user uploads are not included. Brand names and third-party assets remain subject to their respective owners' rights. This repository does not grant a license for reuse.
