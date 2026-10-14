@@ -4,6 +4,10 @@ Megah Abadi online store application with a product catalog, shopping cart, chec
 
 **Status:** Local development; a public demo is not yet available.
 
+## Preview
+
+[![Megah Abadi — application preview](docs/screenshots/project-preview.png)](docs/screenshots/project-preview.png)
+
 ## Features
 
 - Product catalog, filters, and reviews
